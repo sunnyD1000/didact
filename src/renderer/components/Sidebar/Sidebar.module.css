@@ -1,0 +1,92 @@
+.sidebar {
+  width: var(--sidebar-width);
+  min-width: var(--sidebar-width);
+  background: var(--surface);
+  border-right: 1px solid var(--border);
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  overflow: hidden;
+  -webkit-app-region: drag;
+}
+
+.header {
+  padding: 20px 16px 12px;
+  -webkit-app-region: drag;
+}
+
+.logo {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--accent-light);
+  letter-spacing: 0.5px;
+}
+
+.folders {
+  flex: 1;
+  overflow-y: auto;
+  padding: 4px 0;
+  -webkit-app-region: no-drag;
+}
+
+.footer {
+  padding: 12px;
+  border-top: 1px solid var(--border);
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  -webkit-app-region: no-drag;
+}
+
+.newFolderBtn {
+  background: transparent;
+  color: var(--accent-light);
+  font-size: 13px;
+  padding: 6px 8px;
+  border-radius: var(--radius);
+  text-align: left;
+  transition: background 0.15s;
+}
+.newFolderBtn:hover {
+  background: var(--border);
+}
+
+.settingsBtn {
+  background: transparent;
+  color: var(--text-muted);
+  font-size: 12px;
+  padding: 5px 8px;
+  border-radius: var(--radius);
+  text-align: left;
+  transition: background 0.15s;
+}
+.settingsBtn:hover {
+  background: var(--border);
+}
+
+.newFolder {
+  display: flex;
+  gap: 6px;
+}
+
+.input {
+  flex: 1;
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  color: var(--text);
+  font-size: 13px;
+  padding: 4px 8px;
+  outline: none;
+}
+.input:focus {
+  border-color: var(--accent);
+}
+
+.btnPrimary {
+  background: var(--accent);
+  color: #fff;
+  border-radius: var(--radius);
+  font-size: 13px;
+  padding: 4px 10px;
+}

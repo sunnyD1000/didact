@@ -1,0 +1,68 @@
+/* ── Reset ─────────────────────────────────────────── */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* ── Root variables ────────────────────────────────── */
+:root {
+  --bg: #0f0f1a;
+  --surface: #1a1a2e;
+  --surface-2: #16213e;
+  --border: #2a2a4a;
+  --text: #e8e8f0;
+  --text-muted: #8888aa;
+  --accent: #7c5cd8;
+  --accent-light: #9b7de8;
+  --success: #4caf81;
+  --danger: #e05c6e;
+  --warning: #e0a050;
+  --sidebar-width: 280px;
+  --radius: 8px;
+  --font: -apple-system, "Segoe UI", system-ui, sans-serif;
+}
+
+/* ── Base ──────────────────────────────────────────── */
+html,
+body {
+  height: 100%;
+  font-family: var(--font);
+  font-size: 14px;
+  line-height: 1.6;
+  color: var(--text);
+  background: var(--bg);
+  -webkit-font-smoothing: antialiased;
+}
+
+#root {
+  height: 100%;
+  display: flex;
+}
+
+/* ── Scrollbars ─────────────────────────────────────── */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: var(--border);
+  border-radius: 3px;
+}
+
+/* ── Buttons ────────────────────────────────────────── */
+button {
+  font-family: var(--font);
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}

@@ -1,0 +1,53 @@
+.subFolder {
+  margin: 4px 0;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 4px 8px;
+}
+
+.label {
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+  color: var(--text-muted);
+}
+
+.uploadBtn {
+  background: transparent;
+  color: var(--accent-light);
+  font-size: 16px;
+  line-height: 1;
+  width: 20px;
+  height: 20px;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.uploadBtn:hover {
+  background: var(--border);
+}
+
+.progress {
+  font-size: 11px;
+  color: var(--warning);
+  padding: 2px 8px 4px;
+}
+
+.files {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+}
+
+.empty {
+  font-size: 11px;
+  color: var(--text-muted);
+  padding: 4px 8px;
+  font-style: italic;
+}

@@ -1,0 +1,61 @@
+.folder {
+  margin-bottom: 2px;
+}
+
+.folderHeader {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  width: 100%;
+  padding: 6px 12px;
+  background: transparent;
+  color: var(--text);
+  font-size: 13px;
+  font-weight: 600;
+  text-align: left;
+  border-radius: var(--radius);
+  transition: background 0.12s;
+}
+.folderHeader:hover {
+  background: var(--border);
+}
+
+.arrow {
+  color: var(--text-muted);
+  font-size: 11px;
+  width: 12px;
+}
+
+.name {
+  flex: 1;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.count {
+  font-size: 11px;
+  color: var(--text-muted);
+  background: var(--bg);
+  padding: 1px 6px;
+  border-radius: 10px;
+}
+
+.subFolders {
+  padding-left: 12px;
+  padding-bottom: 4px;
+}
+
+.studyBtn {
+  margin-top: 6px;
+  background: var(--accent);
+  color: #fff;
+  font-size: 12px;
+  padding: 4px 10px;
+  border-radius: var(--radius);
+  width: 100%;
+  text-align: center;
+}
+.studyBtn:hover {
+  background: var(--accent-light);
+}

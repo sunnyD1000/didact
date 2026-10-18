@@ -1,0 +1,39 @@
+# Dependencies
+node_modules/
+
+# Build outputs
+dist/
+dist-electron/
+release/
+out/
+
+# Native addon artifacts
+*.node
+build/Release/
+.node_cache/
+
+# electron-builder
+app-builds/
+
+# LanceDB data files (if dev DB ever lands in-repo)
+*.lance
+*.arrow
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Editor
+.vscode/
+.idea/
+
+# Env / secrets
+.env
+.env.*
+!.env.example
+
+# Test coverage
+coverage/
+
+# TypeScript incremental build info
+*.tsbuildinfo

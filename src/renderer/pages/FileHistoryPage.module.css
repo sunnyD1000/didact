@@ -1,0 +1,142 @@
+.page {
+  max-width: 860px;
+  margin: 0 auto;
+  padding: 32px 24px;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.title {
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--text);
+}
+
+.toggle {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 13px;
+  color: var(--text-muted);
+  cursor: pointer;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.empty {
+  color: var(--text-muted);
+  font-style: italic;
+  padding: 20px 0;
+}
+
+.item {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  overflow: hidden;
+  cursor: pointer;
+  transition: border-color 0.12s;
+}
+.item:hover {
+  border-color: var(--accent);
+}
+.item.bad {
+  opacity: 0.5;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 14px;
+}
+
+.badge {
+  font-size: 10px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  padding: 2px 8px;
+  border-radius: 10px;
+  flex-shrink: 0;
+  background: var(--border);
+  color: var(--text-muted);
+}
+.badge_mc_conceptual { background: color-mix(in srgb, var(--accent) 20%, transparent); color: var(--accent-light); }
+.badge_feynman { background: color-mix(in srgb, var(--success) 20%, transparent); color: var(--success); }
+.badge_exam_verbatim { background: color-mix(in srgb, var(--warning) 20%, transparent); color: var(--warning); }
+.badge_exam_modified { background: color-mix(in srgb, var(--danger) 20%, transparent); color: var(--danger); }
+
+.prompt {
+  flex: 1;
+  font-size: 14px;
+  color: var(--text);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.score {
+  font-size: 13px;
+  color: var(--text-muted);
+  flex-shrink: 0;
+}
+
+.due {
+  font-size: 12px;
+  color: var(--text-muted);
+  flex-shrink: 0;
+}
+
+.badBtn {
+  background: transparent;
+  font-size: 13px;
+  padding: 2px 4px;
+  border-radius: 4px;
+  flex-shrink: 0;
+}
+.badBtn:hover {
+  background: var(--border);
+}
+
+.detail {
+  border-top: 1px solid var(--border);
+  padding: 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background: var(--surface-2);
+}
+
+.fullPrompt {
+  font-size: 16px;
+  color: var(--text);
+  line-height: 1.5;
+}
+
+.answerBox {
+  font-size: 14px;
+  color: var(--text);
+  display: flex;
+  gap: 8px;
+}
+
+.label {
+  font-weight: 700;
+  color: var(--text-muted);
+  flex-shrink: 0;
+}
+
+.bucket {
+  font-size: 12px;
+  color: var(--text-muted);
+}
